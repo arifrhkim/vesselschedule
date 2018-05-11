@@ -14,89 +14,6 @@
 
     <link rel="stylesheet" href="css/custom.css" >
 
-    <style>
-    header {
-      background: linear-gradient(45deg, #9FB9FE 0%, #CBE6FF 98%); height:300px;
-      color: #FFF;
-      position: relative;
-      z-index: -2;
-    }
-
-    .bg-p3 {
-      /* lg pelindo: */
-      opacity: 0.45;
-      transform: rotate(-7deg);
-      height: 450px;
-      position: absolute;
-      right: 15%;
-      top: -30px;
-      z-index: -1;
-    }
-    .title {
-      font-size: 60pt;
-      margin-top: 70px;
-    }
-    .date {
-
-    }
-    .shadow {
-       box-shadow:0 2px 15px 0 rgba(0, 0, 0, 0.18);
-    }
-    .grad-blue {
-      /* Mask: */
-      background-image: linear-gradient(50deg, #D4ECFF 0%, #FDFEFF 100%);
-    }
-    .card {
-      border: none;
-    }
-
-    /* SCROLLBAR */
-
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: #f8f8f8;
-        border-radius: 3px;
-
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: #F0F0F0;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #F4F4F4;
-    }
-
-    .date {
-      font-size:21pt;
-      margin-bottom:-10px;
-    }
-    .clock {
-      font-size:50pt;
-    }
-
-    .head {
-      margin-top:30px;
-      height:100px;
-      border-radius:8px;
-      z-index:20;
-    }
-    .head-content {
-      color:#B4C8FF;
-      padding:30px 0 0;
-    }
-    .head-text {
-      border-right: solid 1px lightgrey;
-    }
-
-    </style>
-
   </head>
   <body onload="startTime()">
 
@@ -136,31 +53,31 @@
 
     </header>
 
-    <div class="container-fluid" style="padding:0px 60px; margin-top: 26px;" >
-      <div class="row" style=" height:530px; overflow-y:scroll;" id="autoscroll">
+    <div class="container-fluid cn-scrolls" >
+      <div class="row cn-scroll" id="autoscroll">
         <div class="col-md">
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
+                <div class="col-md text-center vessel-name">
                   <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -169,27 +86,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Dobon Solo</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -198,27 +115,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Ciremai</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -227,27 +144,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Bukit Raya</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -256,27 +173,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Dorolonda</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -285,27 +202,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Dobon Solo</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -314,27 +231,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Ciremai</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -343,27 +260,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Bukit Raya</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -372,27 +289,27 @@
             </div>
           </div>
 
-          <div class="card col-md shadow grad-blue" style="margin-top:16px; height:100px; border-radius: 8px;">
-            <div class="card-body" style="color:#838383; padding:30px 0 0;">
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
               <div class="row align-items-center">
-                <div class="col-md text-center" style="background-color:#B4C8FF; color:#FFF; position:relative; margin: -30px -30px 0 0; padding:30px 50px 29px 50px; border-radius: 8px 0 0 8px;">
-                  <h3>Dorolonda</h3>
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>16:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
                   <span>Wednesday, 9 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>15:00 WIB</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
                   <span>Friday, 11 May 2018</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Surabaya (SBY)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
                   <span>Tanjung Perak</span>
                 </div>
-                <div class="col-md" style="position:relative; padding: 0 60px 0 60px;">
-                  <h4 style="position:absolute; bottom: 15px;"><b>Semarang (SMG)</b></h4>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
                   <span>Tanjung Emas</span>
                 </div>
 
@@ -401,7 +318,121 @@
             </div>
           </div>
 
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
 
+              <div class="row align-items-center">
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
+                  <span>Wednesday, 9 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
+                  <span>Friday, 11 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
+                  <span>Tanjung Perak</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
+                  <span>Tanjung Emas</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
+
+              <div class="row align-items-center">
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
+                  <span>Wednesday, 9 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
+                  <span>Friday, 11 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
+                  <span>Tanjung Perak</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
+                  <span>Tanjung Emas</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
+
+              <div class="row align-items-center">
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
+                  <span>Wednesday, 9 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
+                  <span>Friday, 11 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
+                  <span>Tanjung Perak</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
+                  <span>Tanjung Emas</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card col-md shadow grad-blue cn-card">
+            <div class="card-body cn-card-bd">
+
+              <div class="row align-items-center">
+                <div class="col-md text-center vessel-name">
+                  <h3>Gunung Dempo</h3>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>16:00 WIB</b></h4>
+                  <span>Wednesday, 9 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>15:00 WIB</b></h4>
+                  <span>Friday, 11 May 2018</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Surabaya (SBY)</b></h4>
+                  <span>Tanjung Perak</span>
+                </div>
+                <div class="col-md cn-row">
+                  <h4 class="cn-row-in"><b>Semarang (SMG)</b></h4>
+                  <span>Tanjung Emas</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
 
         </div>
       </div>
