@@ -1,5 +1,6 @@
 header {
-  background: linear-gradient(45deg, #9FB9FE 0%, #CBE6FF 98%); height:300px;
+  background: linear-gradient(45deg, #008cff 0%, #6bc7ff 100%);
+  height:330px;
   color: #FFF;
   position: relative;
   z-index: -2;
@@ -11,17 +12,16 @@ header {
   transform: rotate(-7deg);
   height: 450px;
   position: absolute;
-  right: 15%;
-  top: -30px;
+  right: 17%;
+  top: -10px;
   z-index: -1;
+
 }
 .title {
   font-size: 60pt;
-  margin-top: 70px;
+  margin-top: 110px;
 }
-.date {
 
-}
 .shadow {
    box-shadow:0 2px 15px 0 rgba(0, 0, 0, 0.18);
 }
@@ -31,6 +31,7 @@ header {
 }
 .card {
   border: none;
+  /* border-radius: 5px !important; */
 }
 
 /* SCROLLBAR */
@@ -59,25 +60,30 @@ header {
 .date {
   font-size:21pt;
   margin-bottom:-10px;
+  font-weight: 500;
 }
 .clock {
-  font-size:50pt;
+  font-size:60pt;
+  font-weight: 700;
+
 }
 
 .head {
-  margin-top:30px;
+  margin-top:20px;
   height:100px;
   border-radius:8px;
   z-index:20;
 }
 .head-content {
-  color:#B4C8FF;
+  color:#838383;
   padding:30px 0 0;
 }
 .head-text {
   border-right: solid 1px lightgrey;
 }
-
+.head-text-b {
+  font-weight: 700 !important;
+}
 .cn-scrolls {
   padding:0px 60px;
   margin-top: 26px;
@@ -98,7 +104,7 @@ header {
 }
 
 .vessel-name {
-  background-color:#B4C8FF;
+  background-color:#2798ff;
   color:#FFF;
   position:relative;
   margin: -30px -30px 0 0;
