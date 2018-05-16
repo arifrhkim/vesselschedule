@@ -25,6 +25,7 @@ header {
 .shadow {
    box-shadow:0 2px 15px 0 rgba(0, 0, 0, 0.18);
 }
+
 .grad-blue {
   /* Mask: */
   background-image: linear-gradient(50deg, #D4ECFF 0%, #FDFEFF 100%);
@@ -75,7 +76,7 @@ header {
   z-index:20;
 }
 .head-content {
-  color:#838383;
+  color:#5f5f5f;
   padding:30px 0 0;
 }
 .head-text {
@@ -99,7 +100,7 @@ header {
   border-radius: 8px;
 }
 .cn-card-bd {
-  color:#838383;
+  color:#6d7075;
   padding:30px 0 0;
 }
 
@@ -111,6 +112,14 @@ header {
   padding:30px 50px 29px 50px;
   border-radius: 8px 0 0 8px;
 }
+.vessel-name-arrival {
+  background-color:#2798ff;
+  color:#FFF;
+  position:relative;
+  margin: -30px -30px 0 0;
+  padding:30px 50px 29px 50px;
+  border-radius: 8px;
+}
 
 .cn-row {
   position:relative;
@@ -119,4 +128,38 @@ header {
 .cn-row-in {
   position:absolute;
   bottom: 15px;
+}
+
+.fs-16 {
+  font-size: 16pt;
+}
+.fs-18 {
+  font-size: 18pt;
+}
+.fs-26 {
+  font-size: 26pt;
+}
+.fs-28 {
+  font-size: 28pt;
+}
+.fs-36 {
+  font-size: 36pt;
+}
+
+/* ARRIVAL */
+.row-arv {
+  padding: 16px 17px 0;
+}
+
+.head-arv {
+   width:107%;
+   margin: 10px 0;
+   color: #fff;
+   background-image: url('../img/lg-p3-w-sm.png'), linear-gradient(45deg, #008cff 0%, #6bc7ff 100%);
+   min-height:100px;
+}
+.body-arv {
+  padding: 0px 10px 0px 35px;
+  color: #6d7075; 
+  background-image: linear-gradient(50deg, #D4ECFF 0%, #FDFEFF 100%);
 }
